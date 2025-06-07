@@ -2,6 +2,7 @@
 
 namespace AnalizadorMatriz.Interfaces
 {
+  // Movido
   public interface IMatrixService
   {
     public void LoadMatrix(int[,] matrix);

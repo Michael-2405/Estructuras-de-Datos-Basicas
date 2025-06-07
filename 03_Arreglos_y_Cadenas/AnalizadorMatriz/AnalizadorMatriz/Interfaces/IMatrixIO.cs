@@ -2,6 +2,7 @@
 {
   public interface IMatrixIO
   {
+    // Movido
     (int Rows, int Columns) GetMatrixDimensions();
     int[,] GetMatrixValues(int rows, int columns);
     void ShowMatrix(int[,] matrix);
