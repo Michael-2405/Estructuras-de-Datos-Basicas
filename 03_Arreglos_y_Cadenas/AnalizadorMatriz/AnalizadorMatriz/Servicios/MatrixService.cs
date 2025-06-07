@@ -3,7 +3,9 @@ using AnalizadorMatriz.Modelos;
 
 namespace AnalizadorMatriz.Servicios
 {
-  // Movido
+  /// <summary>
+  /// Provee operaciones de análisis sobre matrices cargadas.
+  /// </summary>
   public class MatrixService : IMatrixService
   {
     private int[,] _matrix;
