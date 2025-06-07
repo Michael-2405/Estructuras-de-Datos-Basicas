@@ -4,6 +4,10 @@ using EstudiantesEnMemoria.Utils;
 
 class Program
 {
+  /// <summary>
+  /// Punto de entrada del programa.
+  /// Ejecuta un menú para gestionar estudiantes en memoria.
+  /// </summary>
   public static void Main(string[] args)
   {
     IStudentService studentService = new StudentService();

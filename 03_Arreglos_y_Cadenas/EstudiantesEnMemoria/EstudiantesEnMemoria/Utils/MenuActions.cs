@@ -2,8 +2,13 @@
 
 namespace EstudiantesEnMemoria.Utils
 {
+  
+  /// <summary>
+ /// Contiene las acciones del menú relacionadas con estudiantes.
+ /// </summary>
   public static class MenuActions
   {
+    /// <summary>Agrega un nuevo estudiante solicitando sus datos.</summary>
     public static void Add(IStudentService studentService)
     {
       var student = StudentInputValidation.ReadStudentFromConsole();
@@ -13,6 +18,7 @@ namespace EstudiantesEnMemoria.Utils
         Console.WriteLine("Error al agregar el estudiante.");
     }
 
+    /// <summary>Actualiza los datos de un estudiante existente.</summary>
     public static void Update(IStudentService studentService)
     {
       Console.Write("Ingresa la matrícula del estudiante que quieres modificar: ");
@@ -32,6 +38,7 @@ namespace EstudiantesEnMemoria.Utils
         Console.WriteLine("Error actualizando al estudiante");
     }
 
+    /// <summary>Elimina un estudiante según su matrícula.</summary>
     public static void Delete(IStudentService studentService)
     {
       Console.Write("Ingresa la matrícula del estudiante que quieres eliminar: ");
@@ -43,6 +50,7 @@ namespace EstudiantesEnMemoria.Utils
         Console.WriteLine("Estudiante no encontrado");
     }
 
+    /// <summary>Busca un estudiante por matrícula y lo muestra.</summary>
     public static void Find(IStudentService studentService)
     {
       Console.Write("Ingresa la matrícula del estudiante que quieres buscar: ");
@@ -55,6 +63,7 @@ namespace EstudiantesEnMemoria.Utils
         Console.WriteLine("Estudiante no encontrado");
     }
 
+    /// <summary>Muestra todos los estudiantes registrados.</summary>
     public static void ShowAll(IStudentService studentService)
     {
       var students = studentService.GetAll();
@@ -68,6 +77,6 @@ namespace EstudiantesEnMemoria.Utils
       {
         Console.WriteLine(student);
       }
-    }    
+    }
   }
 }
