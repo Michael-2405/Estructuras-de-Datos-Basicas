@@ -4,11 +4,17 @@ using JuegoDeCartas.Modelos;
 
 namespace JuegoDeCartas.Servicios
 {
+  /// <summary>
+  /// Implementación de una baraja de 52 cartas.
+  /// </summary>
   public class CardDeck : ICardDeck
   {
     private readonly List<Card> _cards;
     private readonly Random _random;
 
+    /// <summary>
+    /// Inicializa la baraja con 52 cartas.
+    /// </summary>
     public CardDeck()
     {
       _cards = new List<Card>();
@@ -16,11 +22,14 @@ namespace JuegoDeCartas.Servicios
       InitializeDeck();
     }
 
+    /// <summary>
+    /// Inicializa el mazo con todas las combinaciones de símbolos y valores.
+    /// </summary>
     private void InitializeDeck()
     {
-      foreach(Symbol suit in Enum.GetValues(typeof(Symbol)))
+      foreach (Symbol suit in Enum.GetValues(typeof(Symbol)))
       {
-        foreach(Value rank in Enum.GetValues(typeof(Value)))
+        foreach (Value rank in Enum.GetValues(typeof(Value)))
         {
           _cards.Add(new Card(suit, rank));
         }
@@ -29,7 +38,7 @@ namespace JuegoDeCartas.Servicios
 
     public void Shuffle()
     {
-      for(int i = _cards.Count - 1; i > 0; i--)
+      for (int i = _cards.Count - 1; i > 0; i--)
       {
         int j = _random.Next(i + 1);
         var temp = _cards[i];
@@ -49,6 +58,7 @@ namespace JuegoDeCartas.Servicios
       _cards.RemoveRange(0, hand.Count);
       return hand;
     }
+
     public List<Card> GetAllCards()
     {
       return _cards;
