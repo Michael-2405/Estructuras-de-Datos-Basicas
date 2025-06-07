@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35828.75 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salario Mensual", "Salario Mensual\Salario Mensual.csproj", "{622DD494-0DFA-4F21-8F39-3C73057CFD68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salario Mensual", "Salario Mensual\Salario Mensual.csproj", "{B5DCCF12-4011-4CB2-9AB8-0B24C6E4B53B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{622DD494-0DFA-4F21-8F39-3C73057CFD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{622DD494-0DFA-4F21-8F39-3C73057CFD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{622DD494-0DFA-4F21-8F39-3C73057CFD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{622DD494-0DFA-4F21-8F39-3C73057CFD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DCCF12-4011-4CB2-9AB8-0B24C6E4B53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DCCF12-4011-4CB2-9AB8-0B24C6E4B53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DCCF12-4011-4CB2-9AB8-0B24C6E4B53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DCCF12-4011-4CB2-9AB8-0B24C6E4B53B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6C9FC1CD-DDB9-40E6-AC44-DFB3DC06FE73}
+		SolutionGuid = {2EFF8092-61C6-4EC0-8E3C-FC0A00CB41B7}
 	EndGlobalSection
 EndGlobal
