@@ -1,10 +1,24 @@
 ﻿namespace AnalizadorMatriz.Modelos
 {
+  /// <summary>
+  /// Representa un elemento individual de una matriz.
+  /// Contiene su valor y posición.
+  /// </summary>
   public class MatrixElement
   {
-    // Movido
+    /// <summary>
+    /// Valor numérico del elemento.
+    /// </summary>
     public int Value { get; set; }
-    public int Row {  get; set; }
+
+    /// <summary>
+    /// Fila en la que se encuentra el elemento.
+    /// </summary>
+    public int Row { get; set; }
+
+    /// <summary>
+    /// Columna en la que se encuentra el elemento.
+    /// </summary>
     public int Column { get; set; }
 
     public override string ToString()

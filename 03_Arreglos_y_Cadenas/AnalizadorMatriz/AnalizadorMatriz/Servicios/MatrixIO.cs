@@ -2,7 +2,9 @@
 
 namespace AnalizadorMatriz.Servicios
 {
-  // Movido
+  /// <summary>
+  /// Implementación de entrada/salida para matrices usando la consola.
+  /// </summary>
   public class MatrixIO : IMatrixIO
   {
     public (int Rows, int Columns) GetMatrixDimensions()
