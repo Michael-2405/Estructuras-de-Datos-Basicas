@@ -1,0 +1,16 @@
+# Ignorar carpetas de compilación
+bin/
+obj/
+.vs/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.user
+*.suo
+*.log
+*.tmp
+*.userosscache
+*.sln.docstates
+[Bb]in/
+[Oo]bj/
